@@ -9,7 +9,7 @@ public class plugin extends KubeJSPlugin {
     @Override
     public void registerRecipeSchemas(RegisterRecipeSchemasEvent event){
         event.namespace(MODID)
-                .register("add_fluid_extraction", FluidExtractionSchema.SCHEMA)
+                .register("fluid_extraction", FluidExtractionSchema.SCHEMA)
         ;
     }
 }
