@@ -7,6 +7,7 @@ import dev.latvian.mods.kubejs.recipe.RecipeJS;
 public class FluidExtractionRecipe extends RecipeJS {
     @Override
     public void serialize(){
+        json.addProperty("type", "create_wells:fluid_extraction");
         JsonObject condition = new JsonObject();
         condition.addProperty("direction", getValue(FluidExtractionSchema.DIRECTION));
         condition.addProperty("yMin", getValue(FluidExtractionSchema.Y_MIN));
